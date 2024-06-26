@@ -1,13 +1,13 @@
-* {
-    background-color: var(--secondary);
-    color: var(--primary);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
 :root {
     --primary: rgb(88, 88, 88);
     --secondary: rgb(245, 245, 245);
     --accent: rgb(106, 215, 254);
+}
+
+* {
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
@@ -64,8 +64,7 @@ h2 {
     margin-right: 20px;
 }
 
-section,
-footer {
+section {
     display: flex;
 }
 
@@ -74,7 +73,7 @@ h3 {
     font-size: 32px;
     width: 200px;
     text-align: right;
-    padding-right: 15px;
+    /* padding-right: 15px; */
 }
 
 .cards {
@@ -83,25 +82,58 @@ h3 {
     margin: 10px;
     width: 80%;
     background-color: lightgoldenrodyellow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h4 {
+    font-size: 12pt;
 }
 
 .cards p {
     font-size: 8pt;
 }
 
-h4 {
-    font-size: 12pt;
-    margin: 0;
-    padding: 0;
+#horiseon {
+    max-width:60vw;
 }
 
+.cardA {
+    position: relative;
+    margin-bottom: -75px;
+}
+
+#otherprojects {
+    max-width: 30vw;
+}
+
+.cardB {
+    max-width: 40vw;
+    height: 150px;
+}
+
+#contactme {
+    color: var(--accent);
+    /* margin-top: 50px; */
+}
+
+#contactme a {
+    color: var(--primary);
+    margin-left: 5%;
+    margin-right: 5%;
+} 
 
 
 
+/* elements on screen adjusts as the width changes */
+/* @media screen and (min-width: 768px) { */
 
-/* float - text to flow around the image */
-
-
-
+/* media query for larger screens */
+/* @media screen and (min-width: 992px) {
+    header {
+    width: 75%;
+}
+  
 
 
