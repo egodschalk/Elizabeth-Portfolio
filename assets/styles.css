@@ -1,0 +1,107 @@
+* {
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+:root {
+    --primary: rgb(88, 88, 88);
+    --secondary: rgb(245, 245, 245);
+    --accent: rgb(106, 215, 254);
+}
+
+header {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    background-color: var(--accent);
+    color: var(--primary);
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    padding-left: 5%;
+}
+
+header nav {
+    background-color: var(--primary);
+    text-align: right;
+    color: var(--accent);
+    padding-top: 25px;
+}
+
+header nav a {
+    background-color: var(--primary);
+    color: var(--accent);
+    margin-left: 15px;
+    margin-right: 15px;
+} 
+
+.banner {
+    background-color: salmon;
+    width:100%;
+    height: 150px;
+}
+
+/* check into absolute positioning */
+h2 {
+    background-color: var(--accent);
+    color: var(--primary);
+    padding: 5px;
+    position: relative;
+    margin-right: 80px;
+    margin-left: 75%;
+    margin-top: -50px;
+    
+}
+
+#picme {
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+}
+
+section,
+footer {
+    display: flex;
+}
+
+h3 {
+    color: var(--primary);
+    font-size: 32px;
+    width: 200px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.cards {
+    border-left: 3px solid var(--primary);
+    padding: 15px;
+    margin: 10px;
+    width: 80%;
+    background-color: lightgoldenrodyellow;
+}
+
+.cards p {
+    font-size: 8pt;
+}
+
+h4 {
+    font-size: 12pt;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* float - text to flow around the image */
+
+
+
+
+
