@@ -1,11 +1,10 @@
 :root {
     --primary: rgb(88, 88, 88);
-    --secondary: rgb(245, 245, 245);
+    --secondary: rgb(240, 240, 240);
     --accent: rgb(106, 215, 254);
 }
 
 * {
-    background-color: var(--secondary);
     color: var(--primary);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -58,6 +57,10 @@ h2 {
     
 }
 
+main {
+    background-color: var(--secondary);
+}
+
 section {
     display: flex;
 }
@@ -74,7 +77,6 @@ h3 {
     padding: 15px;
     margin: 10px;
     width: 80%;
-    background-color: lightgoldenrodyellow;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -99,18 +101,19 @@ h3 {
     margin: 5px;
 }
 
-h4,
-#smallfont {
+.labels {
     background-color: var(--accent);
     position: relative;
     margin-left: 5px;
     margin-right: 70%;
     bottom: 100px;
     text-align: center;
+    order: 1;
 }
 
 h4 {
     padding-top: 15px;
+    margin: 0;
 }
 
 #smallfont {
@@ -127,13 +130,6 @@ h4 {
     margin: 5px;
 }
 
-/* #Hlink {
-
-}
-#projects {
-    
-} */
-
 #contactme {
     color: var(--accent);
     /* margin-top: 50px; */
@@ -143,6 +139,7 @@ h4 {
     color: var(--primary);
     margin-left: 5%;
     margin-right: 5%;
+    text-decoration: underline;
 } 
 
 
