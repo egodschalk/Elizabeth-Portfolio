@@ -140,24 +140,29 @@ h4 {
 
 #contactme a {
     color: var(--primary);
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    margin-top: 25px;
     text-decoration: underline;
 } 
 
-
  
-  @media screen and (max-width: 768px) {
-    nav, 
+@media screen and (max-width: 768px) {
+    header, 
     section {
         flex-direction: column;
+        justify-content: none;
     }
-    nav {
-
+    
+    header nav {
+        padding-top: 10px;
+        padding-bottom: 15px;
     }
+    
     h2 {
         margin-left: 50%;
     }
+    
     h3 {
         border-right: none;
         border: 3px, solid, var(--primary);
@@ -165,41 +170,26 @@ h4 {
         text-align: center;
         justify-content: center;
     }
+    
     .aboutme {
         display: flex;
         justify-content: center;
     }
+    
     .cards {
         border: none;
     }
+    
     #horiseon {
         width: 80vw;
     }
+    
     #otherprojects {
         width: 80vw;
-
     }
+    
     #contactme {
-        
+        flex-direction: column;
+        text-align: center;
     }
   }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
-    }
-  }
-
-  
-/* elements on screen adjusts as the width changes */
-/* @media screen and (min-width: 768px) { */
-
-/* media query for larger screens */
-/* @media screen and (min-width: 992px) {
-    header {
-    width: 75%;
-}
-  
-
-
