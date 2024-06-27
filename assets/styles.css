@@ -1,51 +1,54 @@
+/* set colors to be used on the page */
 :root {
     --primary: rgb(88, 88, 88);
     --secondary: rgb(240, 240, 240);
     --accent: rgb(106, 215, 254);
 }
 
+/* set styling for the site */
 * {
     color: var(--primary);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* create a header area that will display inline with the title on one side and the nav bar on the other */
 header {
     background-color: var(--primary);
     display: flex;
     justify-content: space-between;
 }
 
+/* styling of the title */
 h1 {
     background-color: var(--accent);
     color: var(--primary);
     height: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px auto 10px 0px;
     padding: 2px;
     padding-left: 5%;
 }
 
+/* styling of the nav bar */
 header nav {
     background-color: var(--primary);
-    text-align: right;
-    color: var(--accent);
     padding-top: 25px;
 }
 
+/* styling of the nav links */
 header nav a {
-    background-color: var(--primary);
     color: var(--accent);
     margin-left: 15px;
     margin-right: 15px;
 } 
 
+/* size of banner image */
 .banner {
     background-color: var(--secondary);
     width:100%;
     height: 150px;
 }
 
-/* check into absolute positioning */
+/* format and position subtitle of page */
 h2 {
     background-color: var(--accent);
     color: var(--primary);
@@ -53,17 +56,19 @@ h2 {
     position: relative;
     margin-left: 75%;
     margin-top: -50px;
-    
 }
 
+/* set format for entire main section */
 main {
     background-color: var(--secondary);
 }
 
+/* set sections to flex boxes */
 section {
     display: flex;
 }
 
+/* formatting and positioning of the section headings */
 h3 {
     color: var(--primary);
     font-size: 32px;
@@ -76,6 +81,7 @@ h3 {
     margin-right: -15px;
 }
 
+/* formatting of the content cards */
 .cards {
     padding: 25px;
     margin: 10px;
@@ -85,25 +91,29 @@ h3 {
     flex-wrap: wrap;
 }
 
-/* remove underline from text */
+/* remove underline from linked text for styling purposes */
 .cards a {
     text-decoration: none;
 }
 
+/* size and positioning of my picture */
 #picme {
     height: 150px;
     float: left;
     margin-right: 20px;
 }
 
+/* format/position of first project card picture */
 #horiseon {
     width: 61vw;
     order: -1;
     background-color: var(--accent);
     padding: 4px;
     margin: 5px;
+    opacity: 0.5;
 }
 
+/* format/position of labels on the product cards */
 .labels {
     background-color: var(--accent);
     position: relative;
@@ -114,16 +124,19 @@ h3 {
     order: 1;
 }
 
+/* position heading text on labels */
 h4 {
     padding-top: 15px;
     margin: 0;
 }
 
+/* position subheading on labels */
 #smallfont {
     font-size: 8pt;
     padding-bottom: 15px;
 }
 
+/* format/position of smaller project card pictures */
 #otherprojects {
     width: 30vw;
     height: 200px;
@@ -131,55 +144,63 @@ h4 {
     background-color: var(--accent);
     padding: 4px;
     margin: 5px;
-    /* display: flex; */
+    opacity: 0.5;
 }
 
-#contactme {
-    color: var(--accent);
+/* when the cursor hovers over the project cards, set to full opacity and shadow to make it look like it's popping out of the page */
+#horiseon:hover,
+#otherprojects:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 25px var(--primary);
 }
 
+/* color/position of contact links */
 #contactme a {
     color: var(--primary);
     margin-left: 3.5%;
     margin-right: 3.5%;
     margin-top: 25px;
-    text-decoration: underline;
+    border-bottom: 3px solid var(--primary);
+    margin-bottom: 15px;
 } 
 
- 
+ /* set properties for mobile layout */
 @media screen and (max-width: 768px) {
-    header, 
-    section {
+/* header set to column layout */
+    header {
         flex-direction: column;
-        justify-content: none;
     }
-    
+/* nav bar positioning */
     header nav {
         padding-top: 10px;
         padding-bottom: 15px;
+        margin: auto;
     }
-    
+/* reposition subtitle */
     h2 {
         margin-left: 50%;
     }
-    
+/* display main sections in column layout */
+    section {
+        flex-direction: column;
+    }
+/* reposition section headers to center above content */
     h3 {
         border-right: none;
         border: 3px, solid, var(--primary);
         width: 95%;
         text-align: center;
-        justify-content: center;
+        margin: auto;
     }
-    
+/* center my picture */
+    #picme {
+        margin: auto;
+    }
+/* center text */
     .aboutme {
-        display: flex;
-        justify-content: center;
+        text-align: center;
     }
-    
-    .cards {
-        border: none;
-    }
-    
+/* set width of project cards */
     #horiseon {
         width: 80vw;
     }
@@ -187,9 +208,14 @@ h4 {
     #otherprojects {
         width: 80vw;
     }
-    
+/* display contact links in column */
     #contactme {
         flex-direction: column;
         text-align: center;
+    }
+/* remove border "underline" and add underline */
+    #contactme a {
+        border-bottom: none;
+        text-decoration: underline;
     }
   }
