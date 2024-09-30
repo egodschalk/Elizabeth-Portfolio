@@ -16,7 +16,12 @@ https://github.com/egodschalk/Elizabeth-Portfolio
 
 ![alt text](<Elizabeth Portfolio Wireframe.png>)
 
-##Screenshots
+## Screenshots
+
+Desktop view:
 
 ![image](https://github.com/user-attachments/assets/af5941fb-776e-4d9f-83d3-35960c9ae26f)
+
+Mobile view:
+
 ![image](https://github.com/user-attachments/assets/760d0cbb-4f43-4a55-b8c4-d69e46b1820a)
